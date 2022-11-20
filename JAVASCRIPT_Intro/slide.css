@@ -85,6 +85,12 @@ img{
   background-color: #120f0f;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
