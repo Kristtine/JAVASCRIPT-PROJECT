@@ -5,7 +5,7 @@
   overflow: hidden;
   width: 100%;
   position: relative;
-  background: rgb(148, 102, 15);
+  background: linear-gradient(to right, rgb(148, 102, 15), #b08027);
   margin-top: 5%;
 }
 
@@ -26,7 +26,6 @@
 img{
   height: 50%;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -90,7 +89,6 @@ img{
   animation-name: fade;
   animation-duration: 1s;
 }
-
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
