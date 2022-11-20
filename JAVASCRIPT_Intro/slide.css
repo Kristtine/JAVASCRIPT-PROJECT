@@ -2,16 +2,25 @@
 
 /* Slideshow container */
 .container {
-  max-width: 2000px;
+  overflow: hidden;
+  width: 100%;
   position: relative;
   background: rgb(148, 102, 15);
   margin-top: 5%;
-  align-items: space-around;
 }
-
 
 .mySlides {
   margin-left: 20%;
+  display: none;
+  height: 100%;
+}
+
+ .mySlides.active {
+    display: block;
+    height: 100%;
+  }
+#first{
+  display: block;
 }
 
 img{
@@ -76,13 +85,18 @@ img{
   background-color: #120f0f;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* */
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
